@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+footer{
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.global-footer-grid{
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px;
+    
+    
+}
+
+.global-footer-grid div{
+    background-color: rgba(0,96,156,255);
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0,96,156,255);
+    justify-content: center;
+    display: flex;
+}
+
+.wrapper {
+    background-color: rgba(0,96,156,255);
+}
+
+h3{
+    color: white;
+}
+
+
+.social-media{
+    font-size: x-small;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+.linkedin-icon{
+    height:100%;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.email-address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-small;   
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    line-height: 1px;
+    
+}
+
+
