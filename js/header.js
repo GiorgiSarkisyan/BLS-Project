@@ -1,9 +1,13 @@
 const logo = document.getElementById("logo");
+let logoDiv = document.getElementById("logo_div")
 
-logo.addEventListener("mouseup", () => {
-  logo.setAttribute("src", "GlobalImages/BLS_Frame_Logo_White.png");
+logoDiv.addEventListener('mouseover', function() {
+  // Change the image source to the new one on hover
+  logo.setAttribute('src', 'GlobalImages/BLS_Logo.png');
 });
 
-logo.addEventListener("mousedown", () => {
-  logo.setAttribute("src", "GlobalImages/BLS_Original_Logo.png");
+// Add an event listener for "mouseout" event
+logoDiv.addEventListener('mouseout', function() {
+  // Revert the image source to the original one when the mouse is not hovering
+  logo.setAttribute('src', 'GlobalImages/BLS_Frame_Logo_White.png');
 });
