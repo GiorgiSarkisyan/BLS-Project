@@ -1,5 +1,4 @@
 const cars = document.querySelector(".mainpage-ambulance-cards");
-
 const users = [
   {
     image: "GlobalImages/BLS_FRONTLINE-200x227.jpg",
@@ -40,8 +39,6 @@ for (let i = 0; i < users.length; i++) {
       `<div class="card">
     <div class ="card-image">
         <img src="${users[i].image}" alt="ambulance">
-    
-    
     </div>
     <div class="card-title">
     <h3>${users[i].title}<h3>
