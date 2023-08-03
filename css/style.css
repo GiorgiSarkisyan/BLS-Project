@@ -1,22 +1,15 @@
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
-
 a{
     text-decoration: none;
     color: inherit;
 }
-
 .wrapper{
     min-height: 100vh;
 }
-
-/* fonti gadmoiwere egre nu gaq */
 .global-footer{
     width: 100%;
     height: 200px;
@@ -24,9 +17,6 @@ a{
     font-family: 'Roboto';
     font-weight: 400;
 }
-
-
-
 .global-footer-content{
     margin: 0 auto;
     max-width: 1280px;
@@ -34,14 +24,12 @@ a{
     grid-template-columns: 1fr 1fr;
     height: 100%;
 }
-
 .content{
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
 }
-
 .content-box{
     width: 170px;
     min-height: 120px;
@@ -54,46 +42,38 @@ a{
     align-items: center;
     justify-content: center;
 }
-
 .content-box-title h3{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 500;
     color: white;
 }
-
 .content-box-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 300;
     color: white;
 } 
-
 .copyright-text{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 100;
     color: white;
 }
-
 .content-box-paragraph{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .global-footer-content-social-media{
     display: flex;
     flex-direction: column;
 }
-
 .social-media{
     list-style-type: none;
     display: flex;
     gap: 5px;
 }
-
 .social-media img{
     height: 30px;
 }
-
 .mainpage-ambulance-cards{
     display: flex;
     height: 250px;
@@ -102,19 +82,16 @@ a{
     margin:0% auto;
     overflow-x: auto;
 }
-
 .card{
     display: grid;
     grid-template-rows: 170px minmax(20px, auto);
     align-items: center;
     /* width: 170px; */
     min-height:220px;
-    
 }
 .card-image img{
     width: 150px;
 }
-
 .card-title h3{
     display: flex;
     justify-content: center;
@@ -122,15 +99,12 @@ a{
     font-weight: 400;
     text-transform: uppercase;
     color: #175da2;
-
 }
-
 .welcome-text-header h1{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #175da2;
     text-align: center;
 }
-
 .welcome-text-header{
     display: flex;
     justify-content: center;
@@ -138,7 +112,6 @@ a{
     align-items: center;
     font-size: 20px;
 }
-
 .welcome{
     display: flex;
     justify-content: center;
@@ -151,9 +124,7 @@ a{
     width: 100%;
     min-height: 400px;
     background-color: #efefef;
-
 }
-
 .welcome-text{
     /* text-align: center; */
     align-items: center;
@@ -166,14 +137,12 @@ a{
     justify-content: center;
     font-size: 17px;
 }
-
 .paragraph {
     text-align: center;
     vertical-align: middle;
     min-height: 30px;
     line-height: 25px;
 }
-
 .map-box iframe{
     width: 100%;
     height: 100%;
