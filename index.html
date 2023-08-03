@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+ <head>
+    <link rel="stylesheet" href="css/mainpage.css">
     <link rel="stylesheet" href="font_css/font.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="GlobalImages/BLS_Frame_Logo_White.png">
-    <title>BLS Georgia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Home</title>
 </head>
 <body>
     <div class="wrapper">
+        <header class="global-header">
+            <div class="global-header-content">   
+                <div class="global-header-content-nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="global-header-content-logo" id="logo_div">
+                                    <a href="#">
+                                        <img id="logo" src="GlobalImages/BLS_Frame_Logo_White.png" alt="CompanyLogo" >
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Our Vehicles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Virtual Tours
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="SliderImages/FirstSliderImage.jpg" alt="Ambulance">
+                </div>
+                <div class="swiper-slide">
+                    <img src="SliderImages/SecondSliderImage.jpg" alt="Ambulance">
+                </div>
+                <div class="swiper-slide">
+                    <img src="SliderImages/NEW_SLIDER_3.jpg" alt="Ambulance">
+                </div>
+                <div class="swiper-slide">
+                    <img src="SliderImages/FourthSliderImage.jpg" alt="Ambulance">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
         <div class="mainpage-ambulance-cards">
         </div>
         <div class="welcome">
@@ -30,7 +86,91 @@
                 </div>
             </div>
         </div>
-        <footer class="global-footer">
+        <section class="mainpage-info-section">
+            <div class="mainpage-info-section-content">
+                <div class="mainpage-info-section-vehicles-box">
+                    <div class="vehicles-box-content">
+                        <div class="vehicles-box-content-title">
+                            <h3>
+                                Why Should <br> You Choose Us
+                            </h3>
+                        </div>
+                        <div class="vehicles-box-content-paragraph">
+                            <p>
+                                our factory creates top-notch ambulances, blending quality, safety, and innovation. 
+                                Trusted by medical professionals and first responders, 
+                                we take pride in providing reliable vehicles that save lives when it counts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-section-content-image">
+                        <iframe src="https://my.matterport.com/show/?m=QYZjwkq1Nca" frameborder="0" allowfullscreen="allowfullscreen"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start"></span></iframe>
+                    </div>
+                </div>
+                <div class="mainpage-info-section-box">
+                    <div class="info-section-content-image">
+                        <img src="HomePageImages/aboutuspng.png" alt="emergency">
+                    </div>
+                    <div class="small-box-middle-content">
+                        <div class="section-box-content">
+                            <div class="section-box-content-title">
+                                <h3>
+                                    The Best <br> Out Of Bests
+                                </h3>
+                            </div>
+                            <div class="section-box-content-paragraph">
+                                <p>
+                                    Blue Light Services was formed in 2011 after identifying a gap in the 
+                                    market for high quality emergency and non emergency vehicles. 
+                                    We have grown year on year servicing the NHS, private companies and prison services.
+                                </p>
+                            </div>
+                            <div class="section-box-content-button">
+                                <a href="aboutus.html" class="section-button">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainpage-info-section-box">
+                    <div class="small-box-middle-content">
+                        <div class="section-box-content">
+                            <div class="section-box-content-title">
+                                <h3>
+                                    Contact Us At <br> Any Given Time
+                                </h3>
+                            </div>
+                            <div class="section-box-content-paragraph">
+                                <p>
+                                    Contact us at any given time for seamless support.
+                                    Your satisfaction is our priority, and we're here to help whenever you need us.
+                                    Feel free to reach out via phone, email or Social media 
+                                </p>              
+                            </div>
+                            <div class="section-box-content-list">
+                                <ul class="image-list">
+                                    <li>
+                                        <a href="https://www.facebook.com/bluelightservices" target="_blank">
+                                            <img src="HomePageImages/facebookblack.svg" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://uk.linkedin.com/company/blue-light-services" target="_blank">
+                                            <img src="HomePageImages/linkedinblack.svg" alt="linkedin">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-section-content-image">
+                        <img src="HomePageImages/BlueLightService_Facebook.jpg" alt="facebook">
+                    </div>
+                </div>
+            </div>
+        </section>
+       <footer class="global-footer">
             <div class="global-footer-content">
                 <div class="global-footer-content-social-media">
                     <div class="content">
@@ -83,6 +223,25 @@
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            effect: "fade",
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
 </body>
 </html>
