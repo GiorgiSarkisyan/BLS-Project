@@ -7,8 +7,11 @@
 .about-us{
     margin-top: 70px;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2b78714d38be655f31b881d05591e5f0fcbfd9b8
 .about-us-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 400;
@@ -41,10 +44,12 @@
     text-decoration: underline;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .about-us-content-right{
     background-color: #efefef;
 
+=======
 .right-title h3{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #175da2;
@@ -74,4 +79,5 @@
 .contact-link:hover{
     text-decoration: underline;
     cursor: pointer;
+>>>>>>> 2b78714d38be655f31b881d05591e5f0fcbfd9b8
 }

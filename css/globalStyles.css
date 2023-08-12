@@ -203,6 +203,7 @@ ul{
     color: white;
     border-bottom: 5px solid white;
 }
+<<<<<<< HEAD
 
 .page-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
@@ -265,7 +266,8 @@ ul{
 
 
 
-/* MEDIA */
+=======
+/* MEDIA
 @media (max-width: 1500px) {
     .global-header-content-logo{
         margin-left:20px;
@@ -282,7 +284,8 @@ ul{
     {
         grid-template-columns: repeat(2, minmax(auto, 512px));
     }
-}
+} */
+>>>>>>> 2b78714d38be655f31b881d05591e5f0fcbfd9b8
 
 
 
