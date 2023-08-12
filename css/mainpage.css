@@ -2,7 +2,7 @@
 .swiper{
     height: 500px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .swiper-slide{
     width: 100%;
@@ -19,7 +19,7 @@
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(3, minmax(480px, auto))
+    grid-template-rows: repeat(3, minmax(480px, auto));
 }
 .section-button{
     min-width: 150px;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;background-color: #47a2f3;
     border-radius: 10px;
     font-family: 'Roboto';
     box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
@@ -47,8 +47,11 @@
 }
 .box-left-side{
     display: flex;
-    justify-content: center;
-    padding: 70px 70px 15px 150px;
+    justify-content: flex-end;
+    padding: 70px 70px 15px 30px;
+}
+.box-left-side-content{
+    max-width: 500px;
 }
 .info-section-content-image iframe {
     width: 100%;
@@ -67,11 +70,11 @@
 .info-section-content-image{
     object-fit: cover;
 }
-.section-box-left-side-content{
-    padding: 70px 150px 15px 70px ;
+.section-box-left-side{
+    padding: 70px 30px 15px 70px ;
 }
-.section-box-left-side-content:nth-child(2){
-    padding-inline-start: 70px 70px 15px 150px;
+.section-box-left-side-content{
+    max-width: 500px;
 }
 .section-box-content-title{
     font-family: 'Roboto';
