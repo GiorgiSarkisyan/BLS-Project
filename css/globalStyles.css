@@ -179,6 +179,66 @@ ul{
     border-bottom: 5px solid white;
 }
 
+.page-title{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #00609c;
+    
+}
+
+/* RIGHT SIDE ABOUT US */
+.right-title h3{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    color: #175da2;
+    font-weight: 400;
+    min-height: 50px;
+}
+
+.logo-image-container img{
+    width: 300px;
+}
+
+.about-us-paragraph{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    color: #606060;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-information{
+    display: flex;
+    gap: 15px;
+}
+
+.address-pin img{
+    width: 25px;
+}
+
+.contact-text{
+    color: gray;
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+}
+
+.contact-link{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    color: #3399ff;
+}
+
+.contact-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 

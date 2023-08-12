@@ -9,6 +9,7 @@
     margin-top: 70px;
 }
 
+
 .about-us-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 400;
@@ -48,40 +49,7 @@
     cursor: pointer;
 }
 
-.right-title h3{
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #175da2;
-    font-weight: 400;
-}
-
 .about-us-content-right{
-    padding-left: 50px;
-}
+    background-color: #efefef;
 
-.logo-image-container img{
-    width: 300px;
-}
-
-.contact-information{
-    display: flex;
-    gap: 15px;
-}
-
-.address-pin img{
-    width: 25px;
-}
-
-.contact-text{
-    color: gray;
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-}
-
-.contact-link{
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #3399ff;
-}
-
-.contact-link:hover{
-    text-decoration: underline;
-    cursor: pointer;
 }

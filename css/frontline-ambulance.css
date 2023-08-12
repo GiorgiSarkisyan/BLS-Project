@@ -1,0 +1,16 @@
+.frontline-ambulance-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.frontline-ambulance{
+    margin-top: 70px;
+}
+
+.frontline-ambulance-content-right{
+    background-color: #efefef;
+
+}
+

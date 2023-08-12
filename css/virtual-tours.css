@@ -1,0 +1,42 @@
+.virtual-tours-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.virtual-tours{
+    margin-top: 70px;
+}
+
+
+.virtual-tours-content-right{
+    background-color: #efefef;
+    
+}
+
+.virtual-tours-description{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    color: #606060;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.car-title{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    color: #00609c;
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* transition: 0.3s; */
+    min-height: 50px;
+}
+
+.car-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.iframe-container{
+    min-height: 600px;
+}
