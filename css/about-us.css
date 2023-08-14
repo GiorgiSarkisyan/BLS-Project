@@ -1,22 +1,21 @@
 .about-us-content{
     max-width: 1280px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    color: white;
 }
 .about-us{
-    margin-top: 70px;
+    margin-top: 50px;
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 2b78714d38be655f31b881d05591e5f0fcbfd9b8
+.about-us-content-left{
+    padding: 40px 20px 40px 20px;
+    max-width: 1024px;
+}
 .about-us-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    font-weight: 400;
-    color: #606060;
-    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -44,40 +43,30 @@
     text-decoration: underline;
     cursor: pointer;
 }
-<<<<<<< HEAD
-
-.about-us-content-right{
-    background-color: #efefef;
-
-=======
-.right-title h3{
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #175da2;
-    font-weight: 400;
+.global-header-content-nav li:nth-child(3)::after{
+    width: 100%;
 }
-.about-us-content-right{
-    padding-left: 50px;
+@media (max-width:970px) {
+    .about-us-content{
+        flex-direction: column;
+    }
+    .about-us-content-left{
+        padding: 40px 20px 0px 20px;
+    }
+    .logo-image-container{
+        height: auto;
+    }
+    .global-about-us{
+        max-width: 100%;
+        padding: 0px 20px 40px 20px;
+    }
+    .global-about-us-content{
+        grid-template-rows: 30px minmax(200px, auto) minmax(20px, auto);
+    }
 }
-.logo-image-container img{
-    width: 300px;
-}
-.contact-information{
-    display: flex;
-    gap: 15px;
-}
-.address-pin img{
-    width: 25px;
-}
-.contact-text{
-    color: gray;
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-}
-.contact-link{
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #3399ff;
-}
-.contact-link:hover{
-    text-decoration: underline;
-    cursor: pointer;
->>>>>>> 2b78714d38be655f31b881d05591e5f0fcbfd9b8
+@media (max-width:720px) {
+    .paragraph-container{
+        display: grid;
+        grid-template-columns: none;
+    }
 }

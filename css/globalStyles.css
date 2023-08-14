@@ -186,12 +186,16 @@ ul{
     grid-template-columns: repeat(4, 165px);
     grid-template-rows: 50px;
     gap: 25px   ;
+    align-items: center;
 }
 .global-header-content-nav li{
     font-size: 21px;
     font-family: 'Roboto';
     font-weight: 400;
     color: white;
+    position: relative;
+    transition: 0.3s;
+    height: 45px;
 }
 .global-header-content-nav li a{
     width: 100%;
@@ -200,53 +204,100 @@ ul{
     justify-content: center;
     align-items: center;
 }
-.global-header-content-nav li:hover{
-    color: white;
-    border-bottom: 5px solid white;
+/* .global-header-content-nav li:hover{
+    background-color: white;
+    color: #00609c; */
+/* } */
+.global-header-content-nav li:after{
+   content: "";
+   position: absolute;
+   background-color: white;
+   height: 4px;
+   width: 0%;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0px;
+   transition: 0.30s;
+} 
+.global-header-content-nav li:hover::after{
+    width: 100%;
 }
 .page-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    padding-bottom: 20px;
-    padding-top: 20px;
     color: #00609c;
+    margin-bottom: 20px;
 }
 /* RIGHT SIDE ABOUT US */
-.right-title h3{
+.global-about-us{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 340px;
+}
+.global-about-us-content{
+    display: grid;
+    grid-template-rows: 30px minmax(200px, auto) minmax(260px, auto);
+    gap: 20px;
+}
+.global-about-us-title h3{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #175da2;
     font-weight: 400;
-    min-height: 50px;
+    min-height: 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
 .logo-image-container img{
-    width: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.about-us-paragraph{
+.global-about-us-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    font-weight: 400;
-    color: #606060;
-    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    font-size: 17px;
     line-height: 1.7;
-    margin-bottom: 20px;
 }
 .contact-information{
     display: flex;
     gap: 15px;
 }
-.address-pin img{
-    width: 25px;
-}
 .contact-text{
     color: gray;
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
 }
-
+.address-pin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address-pin img{
+    width: 20px;
+}
 .contact-link{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #3399ff;
+    color: gray;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.15s;
 }
 .contact-link:hover{
-    text-decoration: underline;
-    cursor: pointer;
+    color: #3399ff;
+}
+.business-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px   ;
+}
+.global-about-us-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 /* MEDIA */
 /* Media */
