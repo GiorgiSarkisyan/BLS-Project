@@ -214,8 +214,7 @@ ul{
    background-color: white;
    height: 4px;
    width: 0%;
-   left: 50%;
-   transform: translateX(-50%);
+   left: 0%;
    bottom: 0px;
    transition: 0.30s;
 } 
@@ -229,13 +228,16 @@ ul{
 }
 /* RIGHT SIDE ABOUT US */
 .global-about-us{
-    padding: 40px 20px;
+}
+.global-about-us-content{ 
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 340px;
+    background-color: #efefef;
+    padding: 40px 20px;
 }
-.global-about-us-content{
+.global-about-us-text{
     display: grid;
     grid-template-rows: 30px minmax(200px, auto) minmax(260px, auto);
     gap: 20px;

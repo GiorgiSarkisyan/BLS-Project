@@ -46,5 +46,13 @@ for (let i = 0; i < users.length; i++) {
     </div>`
     );  
 }
-
-
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      document.querySelector(".first-slide-f-title").classList.add("show");
+  }, 500); 
+});
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+  document.querySelector(".first-slide-s-title").classList.add("show");
+}, 1250);
+});
