@@ -27,7 +27,7 @@ const users = [
     alt: "ambulance",
   },
   {
-    image: "GlobalImages/BLSHDU-200x227.jpg",
+    image: "GlobalImages/BLS_HDU-200x227.jpg",
     title: "BLS HDU",
     alt: "ambulance",
   },
@@ -44,11 +44,7 @@ for (let i = 0; i < users.length; i++) {
     <h3>${users[i].title}<h3>
     </div>
     </div>`
-    );
-    
+    );  
 }
-
-
-
 
 

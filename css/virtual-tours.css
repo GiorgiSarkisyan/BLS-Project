@@ -1,11 +1,11 @@
-.virtual-tours-content-left{
-    padding: 40px 20px 40px 20px;
-    max-width: 1024px;
-}
 .virtual-tours-content{
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
+}
+.virtual-tours-content-left{
+    padding: 40px 20px 40px 20px;
+    max-width: 900px;
 }
 .virtual-tours{
     margin-top: 50px;
@@ -53,5 +53,4 @@
     .global-about-us-content{
         grid-template-rows: 30px minmax(200px, auto) minmax(20px, auto);
     }
-}
 }
