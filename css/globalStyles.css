@@ -234,6 +234,7 @@ ul{
     flex-direction: column;
     gap: 20px;
     max-width: 340px;
+    background-color: #efefef;
 }
 .global-about-us-content{
     display: grid;
