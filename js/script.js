@@ -36,14 +36,14 @@ const users = [
 for (let i = 0; i < users.length; i++) {
     cars.insertAdjacentHTML(
       "beforeend",
-      `<div class="card">
-    <div class ="card-image">
+      `<a href="frontline-ambulance.html" class="card">
+      <div class ="card-image">
         <img src="${users[i].image}" alt="ambulance">
-    </div>
-    <div class="card-title">
-    <h3>${users[i].title}<h3>
-    </div>
-    </div>`
+      </div>
+      <div class="card-title">
+        <h3>${users[i].title}<h3>
+      </div>
+    </a>`
     );  
 }
 document.addEventListener("DOMContentLoaded", function() {
