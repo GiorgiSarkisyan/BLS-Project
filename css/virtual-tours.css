@@ -46,11 +46,9 @@
     .logo-image-container{
         height: auto;
     }
-    .global-about-us{
-        max-width: 100%;
-        padding: 0px 20px 40px 20px;
-    }
     .global-about-us-content{
         grid-template-rows: 30px minmax(200px, auto) minmax(20px, auto);
+        width: 100%;
+        padding: 0px 10px 40px 10px;
     }
 }

@@ -224,25 +224,23 @@ ul{
 .page-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #00609c;
-    height: 30px;
+    height: 50px;
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 /* RIGHT SIDE ABOUT US */
-.global-about-us{
-}
+
 .global-about-us-content{ 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 340px;
     background-color: #efefef;
     padding: 40px 20px;
+    width: 340px;
 }
 .global-about-us-text{
     display: grid;
-    grid-template-rows: 30px minmax(200px, auto) minmax(260px, auto);
+    grid-template-rows: 30px minmax(200px, auto) minmax(70px, auto);
     gap: 20px;
 }
 .global-about-us-title h3{
