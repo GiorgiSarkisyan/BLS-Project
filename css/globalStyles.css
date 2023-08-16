@@ -224,7 +224,10 @@ ul{
 .page-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #00609c;
-    margin-bottom: 20px;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
 }
 /* RIGHT SIDE ABOUT US */
 .global-about-us{
@@ -301,11 +304,21 @@ ul{
     flex-direction: column;
     gap: 10px;
 }
+/* GLOBAL AMBULANCE */
+.global-ambulance-paragraph{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
 /* MEDIA */
 /* Media */
 .global-header-burger-bars{
     display: none;
     height: 50px;
+    cursor: pointer;
 }
 .global-header-burger-nav{
     display: none;

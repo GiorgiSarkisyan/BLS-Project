@@ -11,6 +11,16 @@
 
 .frontline-ambulance-content-right{
     background-color: #efefef;
-
 }
 
+.ambulance-img-box img{
+    width: 100%;}
+
+.ambulance-paragraph{
+    margin-bottom: 20px;
+}
+
+.frontline-ambulance-content-left{
+    max-width: 1024px;
+    padding: 40px 20px;
+}
