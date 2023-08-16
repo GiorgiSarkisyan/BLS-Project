@@ -6,8 +6,7 @@ const users = [
     alt: "ambulance",
   },
   {
-    image:
-      "GlobalImages/BLS_MINIBUS-200x227.jpg",
+    image: "GlobalImages/BLS_MINIBUS-200x227.jpg",
     title: "Minibus",
     alt: "ambulance",
   },
