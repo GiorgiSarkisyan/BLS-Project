@@ -221,13 +221,6 @@ ul{
 .global-header-content-nav li:hover::after{
     width: 100%;
 }
-.page-title{
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: #00609c;
-    height: 50px;
-    display: flex;
-    padding-top: 10px;
-}
 /* RIGHT SIDE ABOUT US */
 .global-about-us-content{ 
     display: flex;
@@ -302,19 +295,44 @@ ul{
     gap: 10px;
 }
 /* GLOBAL AMBULANCE */
-.global-ambulance-paragraph{
+.global-transport-paragraph{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     font-weight: 300;
     color: black;
     font-size: 17px;
     line-height: 1.7;
+    padding-bottom: 20px;
+}
+.page-title{
+    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
+    color: #00609c;
+    height: 50px;
+    display: flex;
 }
 .global-paragraphs{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.global-transport-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.global-transport{
+    margin-top: 50px;
+}
+.global-transport-content-left{
+    padding: 40px 0px;
+    max-width: 1024px;
+    display: flex;
     flex-direction: column;
 }
-/* MEDIA */
+.global-section-content-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* Media */
 .global-header-burger-bars{
     display: none;
