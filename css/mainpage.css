@@ -100,20 +100,24 @@ a{
 /* Minpage Ambulance Cards */
 .mainpage-ambulance-cards{
     display: flex;
-    height: 300px;
+    height: 250px;
     align-items: flex-end;
     justify-content: center;
     gap: 20px;
     max-width: 1024px;
     margin:0 auto;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .card{
     display: grid;
     grid-template-rows: 170px  minmax(50px, auto);
     align-items: center;
-    /* width: 170px; */
     min-height:220px;
+    transition: 0.30s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .card-image img{
     width: 150px;

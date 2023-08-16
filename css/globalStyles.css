@@ -229,7 +229,6 @@ ul{
     padding-top: 10px;
 }
 /* RIGHT SIDE ABOUT US */
-
 .global-about-us-content{ 
     display: flex;
     flex-direction: column;
@@ -310,7 +309,11 @@ ul{
     font-size: 17px;
     line-height: 1.7;
 }
-
+.global-paragraphs{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
 /* MEDIA */
 /* Media */
 .global-header-burger-bars{
