@@ -121,6 +121,7 @@ a{
 }
 .card-image img{
     width: 150px;
+    border-radius: 5px;
 }
 .card-title h3{
     display: flex;
