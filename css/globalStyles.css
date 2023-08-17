@@ -328,7 +328,7 @@ ul{
     display: flex;
     gap: 15px;
 }
-.contact-text{
+.contact-text {
     color: gray;
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
 }
