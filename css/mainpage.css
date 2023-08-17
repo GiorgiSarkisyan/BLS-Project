@@ -122,6 +122,8 @@ a{
 .card-image img{
     width: 150px;
     border-radius: 5px;
+    border-radius: 10px;
+    box-shadow:1px 2px 10px 1px rgba(0,0,0,0.3);
 }
 .card-title h3{
     display: flex;
