@@ -14,7 +14,7 @@ ul{
     min-height: 100vh;
 }
 /* GLOBAL FOOTER */
-.global-footer{
+/* .global-footer{
     background-color: #00609c;
     width: 100%;
 }
@@ -95,7 +95,7 @@ ul{
 .upper-side-right-side iframe{
     width: 100%;
     height: 100%;
-}
+} */
 .global-footer-content-bottom-side{
     background-color:black ;
 }
@@ -227,7 +227,7 @@ ul{
     flex-direction: column;
     gap: 20px;
     background-color: #efefef;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
     width: 340px;
 }
 .global-about-us-text{
@@ -306,8 +306,9 @@ ul{
 .page-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #00609c;
-    height: 50px;
+    height: 70px;
     display: flex;
+    align-items: center;
 }
 .global-paragraphs{
     display: flex;
@@ -323,10 +324,10 @@ ul{
     margin-top: 50px;
 }
 .global-transport-content-left{
-    padding: 40px 0px;
     max-width: 1024px;
     display: flex;
     flex-direction: column;
+    padding: 0px 20px 0px 0px
 }
 .global-section-content-slider img{
     width: 100%;
