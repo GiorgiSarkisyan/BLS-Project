@@ -16,7 +16,7 @@ const users = [
     image: "GlobalImages/BLS_PTS-200x227.jpg",
     title: "PTS",
     alt: "ambulance",
-    href: "#"
+    href: "PTS-stretcher.html"
   },
   {
     image: "GlobalImages/BLS_SECURE-200x227.jpg",
