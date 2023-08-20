@@ -22,7 +22,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="our-vehicles.html">
                                     Our Vehicles
                                 </a>
                             </li>
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </header>
-        <div class="swiper">
+        <div class="swiper" id="mainPageSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="SliderImages/FirstSliderImage.jpg" alt="Ambulance">
@@ -114,9 +114,7 @@
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next">
-
-            </div>
+            <div class="swiper-button-next"></div>
         </div>
         <div class="mainpage-ambulance-cards">
         </div>
@@ -390,7 +388,7 @@
     <script src="js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module">
-        const swiper = new Swiper('.swiper', {
+        const mainSwiper = new Swiper('#mainPageSwiper', {
             effect: "fade",
       spaceBetween: 30,
       centeredSlides: true,

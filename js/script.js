@@ -14,7 +14,7 @@ const users = [
   },
   {
     image: "GlobalImages/BLS_PTS-200x227.jpg",
-    title: "PTS",
+    title: "Stretcher",
     alt: "ambulance",
     href: "PTS-stretcher.html"
   },
@@ -37,20 +37,28 @@ const users = [
     href: "hdu-ambulance.html"
   },
 ];
-
 for (let i = 0; i < users.length; i++) {
-    cars.insertAdjacentHTML(
-      "beforeend",
-      `<a href="${users[i].href}" class="card">
-      <div class ="card-image">
+  let linkTitle = encodeURIComponent(users[i].title);
+  
+  if (users[i].title === "Stretcher") {
+    linkTitle = encodeURIComponent("Stretcher");
+  }
+
+  cars.insertAdjacentHTML(
+    "beforeend",
+    `<a href="our-vehicles.html?title=${linkTitle}" class="card">
+      <div class="card-image">
         <img src="${users[i].image}" alt="ambulance">
       </div>
       <div class="card-title">
-        <h3>${users[i].title}<h3>
+        <h3>
+          ${users[i].title}
+        </h3>
       </div>
     </a>`
-    );  
+  );
 }
+
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
       document.querySelector(".first-slide-f-title").classList.add("show");
@@ -60,4 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
   document.querySelector(".first-slide-s-title").classList.add("show");
 }, 1250);
+});
+const cardElements = cars.querySelectorAll('.card');
+
+cardElements.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    
+    const selectedUserData = users[index];
+    
+    changeContent(selectedUserData);
+    
+  });
 });
