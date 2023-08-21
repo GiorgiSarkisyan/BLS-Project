@@ -80,3 +80,21 @@ cardElements.forEach((card, index) => {
     
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const boxesToAnimate = document.querySelectorAll(".mainpage-info-section-box, .mainpage-info-section-vehicles-box");
+
+  function animateBoxes() {
+    boxesToAnimate.forEach((box) => {
+      const boxPosition = box.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (boxPosition < windowHeight - 100) {
+        box.classList.add("visible");
+      }
+    });
+  }
+
+  animateBoxes();
+
+  window.addEventListener("scroll", animateBoxes);
+});

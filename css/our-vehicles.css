@@ -13,6 +13,13 @@ ul{
 .wrapper{
     min-height: 100vh;
 }
+.global-header-content-nav li:first-child::after{
+    width: 100%;
+}
+.burger-nav-links:nth-child(2){
+    background-color: white;
+    color: black;
+}
 /* GLOBAL FOOTER */
 .global-footer{
     background-color: #00609c;
@@ -367,6 +374,9 @@ ul{
 }
 .global-transport-list.active{
     left: -190px;
+}
+.no-scroll{
+    overflow-y:hidden;
 }
 .pts-container-block{
     display: none;

@@ -511,8 +511,19 @@ const listContentButton = document.getElementById('listContentToggleButton');
 const vehiclesList = document.getElementById('vehiclesList');
 
 listContentButton.addEventListener('click', () => {
-  vehiclesList.classList.toggle('active');
-});
+    vehiclesList.classList.toggle('active');
+  });
+  
+  document.addEventListener('click', event => {
+    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
+    const isClickOnListContentButton = listContentButton.contains(event.target);
+    const isVehiclesListActive = vehiclesList.classList.contains('active');
+  
+    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
+      vehiclesList.classList.remove('active');
+    }
+  });
+  
 
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -537,3 +548,12 @@ else {
   changeContent(defaultUser);
   updateButtonStyles(buttons.find(button => button.textContent === "BLS Frontline"));
 }
+document.addEventListener('click', event => {
+    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
+    const isClickOnListContentButton = listContentButton.contains(event.target);
+    const isVehiclesListActive = vehiclesList.classList.contains('active');
+  
+    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
+      vehiclesList.classList.remove('active');
+    }
+  });

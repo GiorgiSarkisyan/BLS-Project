@@ -8,6 +8,14 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.mainpage-info-section-box,
+.mainpage-info-section-vehicles-box {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out; /* Adjust the duration and easing as needed */
+}
+.visible{
+    opacity: 1;
+}
 .swiper{
     margin-top: 50px;
     height: 500px;
