@@ -537,8 +537,3 @@ else {
   changeContent(defaultUser);
   updateButtonStyles(buttons.find(button => button.textContent === "BLS Frontline"));
 }
-document.onclick = function() {
-    if(vehiclesList.classList.contains("active")) {
-        vehiclesList.classList.remove("active")
-    }
-}
