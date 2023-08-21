@@ -507,7 +507,7 @@ ptsActiveButton.addEventListener("click", () => {
 });
 
 
-const listContentButton = document.querySelector('.global-transport-list-content-button');
+const listContentButton = document.getElementById('listContentToggleButton');
 const vehiclesList = document.getElementById('vehiclesList');
 
 listContentButton.addEventListener('click', () => {
