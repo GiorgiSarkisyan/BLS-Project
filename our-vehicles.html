@@ -3,8 +3,6 @@
 <head>
     <link rel="stylesheet" href="font_css/font.css">
     <link rel="stylesheet" href="css/our-vehicles.css">
-    <link rel="stylesheet" href="css/virtual-tours.css">
-    <link rel="stylesheet" href="css/globalStyles.css">
     <link rel="icon" type="image/x-icon" href="GlobalImages/BLS_Frame_Logoframeframe.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <meta charset="UTF-8">
@@ -12,7 +10,7 @@
     <title>Our Vehicles - BLS Georgia</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="global-header">
             <div class="global-header-content">  
                 <div class="global-header-content-logo" id="logo_div">
@@ -74,8 +72,8 @@
                 </div>
             </div>
         </header>
-        <section class="global-transport">
-            <!-- <div class="global-transport-list" id="vehiclesList">
+        <section class="global-transport" id="wrapper">
+            <div class="global-transport-list" id="vehiclesList">
                 <div class="global-transport-list-content" id="buttonContainer">
                     <div class="global-transport-pts-list" id="ptsContainer">
                         <div class="global-transport-pts-button" id="ptsActiveButton">
@@ -87,8 +85,13 @@
                     <div class="global-transport-list-content-button">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="global-transport-content">              
+                <div class="global-transport-content-left" id="contentDiv">
+                    <div class="loading-screen">
+
+                    </div>
+                </div>
                 <div class="global-about-us">
                     <div class="global-about-us-content">
                         <div class="global-about-us-text">
@@ -134,49 +137,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="global-transport-content-left" id="contentDiv">
-                    <div class="page-title">
-                        <h2>Frontline Ambulance</h2>
-                    </div>
-                    <div class="swiper-div" style="max-width: 900px;">
-                        <div class="swiper" style="width: 100%;">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="FrontlineImages/Bluelight-24-1.jpg" alt="ambulance">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="FrontlineImages/Bluelight-21.jpg" alt="ambulance">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="FrontlineImages/Bluelight-7.jpg" alt="ambulance">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="FrontlineImages/Bluelight-9.jpg" alt="ambulance">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                        <div class="global-paragraphs">
-                            <div class="page-title">
-                                <h2>EMS Frontline Renault Master</h2>
-                            </div>
-                            <div class="global-transport-paragraph">
-                                <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
-                            </div>
-                            <div class="global-transport-paragraph">
-                                <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
-                            </div>
-                            <div class="global-transport-paragraph">
-                                <p><b class="global-bold-text">Plus</b> in ALL our Ambulance interior builds we use Biomaster silver based antimicrobial technology making the working environment:- SAFE TESTED PROTECTED for LIFE</p>
-                            </div>
-                        </div>
-                        <div class="certification-img-box">
-                            <img src="AmbulanceImages/certification.jpg" alt="certification">
-                        </div>
                 </div>
             </div>
         </section>
@@ -330,7 +290,8 @@
         </div>
     </footer>
     <script src="js/header.js"></script>
-    <!-- <script src="js/our-vehicles.js"></script> -->
+    <script src="js/our-vehicles.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

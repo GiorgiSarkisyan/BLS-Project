@@ -377,41 +377,10 @@ ul{
     display: flex;
     align-items: center;
 }
-.global-paragraphs{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-}
 .global-transport-paragraph-title{
     font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
     color: #606060;
     font-weight: 700;
-    padding-bottom: 20px;
-}
-.global-transport-content{
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-}
-.global-transport{
-    margin-top: 50px;
-    position: relative;
-}
-.global-transport-content-left{
-    padding: 40px 20px 40px 20px;
-    max-width: 900px;
-}
-.global-bold-text{
-    color: #606060;
-    font-weight: 700;
-}
-.global-ambulance-ul{
-    list-style-type: disc;
-    font-family: "Roboto", "Helvetica Neue",Arial,sans-serif;
-    color: black;
-    font-weight: 300;
-    padding-left: 25px;
-    line-height: 1.7;
     padding-bottom: 20px;
 }
 @media (max-width:1280px) {
@@ -518,6 +487,7 @@ ul{
         justify-content: center;
         align-items: center;
         height: 40px;
+        text-align: center;
     }
     .bottom-side-right-side ul{
         justify-content: center;
