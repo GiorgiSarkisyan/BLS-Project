@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font_css/font.css">
     <link rel="stylesheet" href="css/globalStyles.css">
-    <link rel="stylesheet" href="css/minibus.css">
     <link rel="stylesheet" href="css/contact-us.css">
     <link rel="icon" type="image/x-icon" href="GlobalImages/BLS_Frame_Logoframeframe.jpg">
     <title>Contact Us - BLS Georgia</title>
@@ -74,22 +73,20 @@
             </div>
         </header>
         <section class="contact-us">
-            <div class="page-title">
+            <div class="contact-us-title">
                 <h2>Contact Us</h2>
             </div>
-            <form class="contact-us-box" action="https://formspree.io/f/xleybgjb"
-            method="POST">
+            <form  novalidate class="contact-us-box" action="https://formspree.io/f/xleybgjb" method="post" id="form">
                 <div class="contact-us-box-info">
-                    <label for="email">
+                    <label for="email" id="emailLabel">
                         Your email (required):
-                        
                     </label>
                     <div class="input-element">
                         <input type="email" name="email" id="email">
                     </div>
                 </div>
                 <div class="contact-us-box-info">
-                    <label for="name">
+                    <label for="name" id="nameLabel">
                         Your Name (required):
                     </label>
                     <div class="input-element">
@@ -125,7 +122,6 @@
                 </div>
             </form>
         </section>
-        
     </div>
     <footer class="global-footer"> 
         <div class="global-footer-content">
@@ -276,5 +272,6 @@
         </div>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
