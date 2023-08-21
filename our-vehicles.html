@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font_css/font.css">
     <link rel="stylesheet" href="css/our-vehicles.css">
-    <link rel="stylesheet" href="css/globalStyles.css">
     <link rel="icon" type="image/x-icon" href="GlobalImages/BLS_Frame_Logoframeframe.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Vehicles - BLS Georgia</title>
 </head>
 <body>
@@ -73,7 +72,7 @@
                 </div>
             </div>
         </header>
-        <section class="global-transport">
+        <section class="global-transport" id="wrapper">
             <div class="global-transport-list" id="vehiclesList">
                 <div class="global-transport-list-content" id="buttonContainer">
                     <div class="global-transport-pts-list" id="ptsContainer">
@@ -83,12 +82,15 @@
                         <div class="pts-container-block" id="ptsBlock">
                         </div>
                     </div>
-                    <div class="global-transport-list-content-button">
+                    <div class="global-transport-list-content-button" id="listContentToggleButton">
                     </div>
                 </div>
             </div>
-            <div class="global-transport-content">
+            <div class="global-transport-content">              
                 <div class="global-transport-content-left" id="contentDiv">
+                    <div class="loading-screen">
+
+                    </div>
                 </div>
                 <div class="global-about-us">
                     <div class="global-about-us-content">
@@ -288,7 +290,25 @@
         </div>
     </footer>
     <script src="js/header.js"></script>
-    <script src="js/our-vehicles.js"></script>
+    <script src="js/our-vehicles.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+        speed: 1000,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
 </body>
 </html>

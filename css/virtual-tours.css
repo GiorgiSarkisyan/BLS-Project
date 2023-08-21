@@ -1,11 +1,15 @@
+.burger-nav-links:nth-child(3){
+    background-color: white;
+    color: black;
+}
 .virtual-tours-content{
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
 }
 .virtual-tours-content-left{
-    padding: 40px 20px 40px 20px;
-    max-width: 900px;
+    padding: 0px 20px 0px 0px;
+    max-width: 940px;
 }
 .virtual-tours{
     margin-top: 50px;
@@ -46,6 +50,11 @@
 }
 .global-header-content-nav li:nth-child(2)::after{
     width: 100%;
+}
+@media (max-width:1280px) {
+    .virtual-tours-content-left{
+        padding: 0 20px;
+    }
 }
 @media (max-width: 970px) {
     .virtual-tours-content{

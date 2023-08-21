@@ -1,46 +1,46 @@
 const users = [
     {
       title: "BLS Frontline",
-      html: `<div class="page-title">
-                <h2>Frontline Ambulance</h2>
-            </div>
-            <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-24-1.jpg" alt="ambulance">
+      html: `
+      <div class="page-title">
+                        <h2>Frontline Ambulance</h2>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-21.jpg" alt="ambulance">
+                    <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-24-1.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-21.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-7.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-9.jpg" alt="ambulance">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-7.jpg" alt="ambulance">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-9.jpg" alt="ambulance">
-                        </div>
+                <div class="global-paragraphs">
+                    <div class="page-title">
+                        <h2>EMS Frontline Renault Master</h2>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="global-transport-paragraph">
+                        <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
+                    </div>
+                    <div class="global-transport-paragraph">
+                        <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
+                    </div>
+                    <div class="global-transport-paragraph">
+                        <p><b class="global-bold-text">Plus</b> in ALL our Ambulance interior builds we use Biomaster silver based antimicrobial technology making the working environment:- SAFE TESTED PROTECTED for LIFE</p>
+                    </div>
                 </div>
-        <div class="global-paragraphs">
-            <div class="page-title">
-                <h2>EMS Frontline Renault Master</h2>
-            </div>
-            <div class="global-transport-paragraph">
-                <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
-            </div>
-            <div class="global-transport-paragraph">
-                <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
-            </div>
-            <div class="global-transport-paragraph">
-                <p><b class="global-bold-text">Plus</b> in ALL our Ambulance interior builds we use Biomaster silver based antimicrobial technology making the working environment:- SAFE TESTED PROTECTED for LIFE</p>
-            </div>
-        </div>
-        <div class="certification-img-box">
-            <img src="AmbulanceImages/certification.jpg" alt="certification">
-        </div>
-        </div>`
+                <div class="certification-img-box">
+                    <img src="AmbulanceImages/certification.jpg" alt="certification">
+                </div>  `
     },
     {
       title: "Minibus",
@@ -507,12 +507,23 @@ ptsActiveButton.addEventListener("click", () => {
 });
 
 
-const listContentButton = document.querySelector('.global-transport-list-content-button');
+const listContentButton = document.getElementById('listContentToggleButton');
 const vehiclesList = document.getElementById('vehiclesList');
 
 listContentButton.addEventListener('click', () => {
-  vehiclesList.classList.toggle('active');
-});
+    vehiclesList.classList.toggle('active');
+  });
+  
+  document.addEventListener('click', event => {
+    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
+    const isClickOnListContentButton = listContentButton.contains(event.target);
+    const isVehiclesListActive = vehiclesList.classList.contains('active');
+  
+    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
+      vehiclesList.classList.remove('active');
+    }
+  });
+  
 
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -537,3 +548,12 @@ else {
   changeContent(defaultUser);
   updateButtonStyles(buttons.find(button => button.textContent === "BLS Frontline"));
 }
+document.addEventListener('click', event => {
+    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
+    const isClickOnListContentButton = listContentButton.contains(event.target);
+    const isVehiclesListActive = vehiclesList.classList.contains('active');
+  
+    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
+      vehiclesList.classList.remove('active');
+    }
+  });
