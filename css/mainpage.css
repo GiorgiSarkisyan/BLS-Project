@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.global-header-content-nav li:nth-child(1)::after{
+    width: 100%;
+}
 .mainpage-info-section-box,
 .mainpage-info-section-vehicles-box {
     opacity: 0;

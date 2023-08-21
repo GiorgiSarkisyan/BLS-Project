@@ -13,9 +13,10 @@ ul{
 .wrapper{
     min-height: 100vh;
 }
-.global-header-content-nav li:first-child::after{
+.global-header-content-nav li:nth-child(2)::after{
     width: 100%;
 }
+
 .burger-nav-links:nth-child(2){
     background-color: white;
     color: black;
@@ -261,9 +262,9 @@ ul{
 }
 .global-header-content-nav ul{
     display: grid;
-    grid-template-columns: repeat(4, 165px);
+    grid-template-columns: repeat(5, 165px);
     grid-template-rows: 50px;
-    gap: 25px   ;
+    gap: 15px   ;
     align-items: center;
 }
 .global-header-content-nav li{

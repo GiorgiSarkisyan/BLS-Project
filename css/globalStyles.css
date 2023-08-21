@@ -254,10 +254,10 @@ ul{
 }
 .global-header-content-nav ul{
     display: grid;
-    grid-template-columns: repeat(4, 165px);
+    grid-template-columns: repeat(5, 165px);
     grid-template-rows: 50px;
-    gap: 25px   ;
     align-items: center;
+    gap: 15px;
 }
 .global-header-content-nav li{
     font-size: 21px;
