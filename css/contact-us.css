@@ -1,3 +1,10 @@
+.burger-nav-links:nth-child(5){
+    background-color: white;
+    color: black;
+}
+.global-header-content-nav li:nth-child(4)::after{
+    width: 100%;
+}
 .wrapper{
     min-height: 65vh;
 }
@@ -5,7 +12,7 @@
     width: 100%;
 }
 .contact-us{
-    margin-top: 70px;
+    margin-top: 50px;
     font-family: "Heebo", "Helvetica Neue",Arial,sans-serif;
     color: gray;
     font-size: 18px;
@@ -86,6 +93,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    margin-bottom: 75px;
 }
 .submit-button button{
     cursor: pointer;
@@ -98,7 +106,7 @@
     border: none;
     border-radius: 5px;
     outline: none;
-    transition: 0.2s
+    transition: 0.2s;
 }
 .submit-button button:hover{
     background-color: #3399ff;
@@ -113,4 +121,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media (max-width:740px) {
+    .contact-us-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-us-box-info{
+        width: 100%;
+        justify-content: center;
+    }
+    .input-element input{
+        width: 80%;
+    }
 }
