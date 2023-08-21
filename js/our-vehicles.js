@@ -1,46 +1,46 @@
 const users = [
     {
       title: "BLS Frontline",
-      html: `<div class="page-title">
-                <h2>Frontline Ambulance</h2>
-            </div>
-            <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-24-1.jpg" alt="ambulance">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-21.jpg" alt="ambulance">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-7.jpg" alt="ambulance">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="FrontlineImages/Bluelight-9.jpg" alt="ambulance">
-                        </div>
+      html: `
+      <div class="page-title">
+                        <h2>Frontline Ambulance</h2>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-        <div class="global-paragraphs">
-            <div class="page-title">
-                <h2>EMS Frontline Renault Master</h2>
-            </div>
-            <div class="global-transport-paragraph">
-                <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
-            </div>
-            <div class="global-transport-paragraph">
-                <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
-            </div>
-            <div class="global-transport-paragraph">
-                <p><b class="global-bold-text">Plus</b> in ALL our Ambulance interior builds we use Biomaster silver based antimicrobial technology making the working environment:- SAFE TESTED PROTECTED for LIFE</p>
-            </div>
-        </div>
-        <div class="certification-img-box">
-            <img src="AmbulanceImages/certification.jpg" alt="certification">
-        </div>
-        </div>`
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-24-1.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-21.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-7.jpg" alt="ambulance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="FrontlineImages/Bluelight-9.jpg" alt="ambulance">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="global-paragraphs">
+                            <div class="page-title">
+                                <h2>EMS Frontline Renault Master</h2>
+                            </div>
+                            <div class="global-transport-paragraph">
+                                <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
+                            </div>
+                            <div class="global-transport-paragraph">
+                                <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
+                            </div>
+                            <div class="global-transport-paragraph">
+                                <p><b class="global-bold-text">Plus</b> in ALL our Ambulance interior builds we use Biomaster silver based antimicrobial technology making the working environment:- SAFE TESTED PROTECTED for LIFE</p>
+                            </div>
+                        </div>
+                        <div class="certification-img-box">
+                            <img src="AmbulanceImages/certification.jpg" alt="certification">
+                        </div>  `
     },
     {
       title: "Minibus",
@@ -434,6 +434,8 @@ function initSwiper() {
     const swiper = new Swiper('.swiper', {
         loop: true,
         speed: 1000,
+        spaceBetween: 30,
+        centeredSlides: true,
         autoplay: {
             delay: 2500,
         },
@@ -450,10 +452,8 @@ function initSwiper() {
 
 
   function changeContent(item) {
-    contentDiv.style.opacity = 0;
     setTimeout(() => {
-      contentDiv.innerHTML = item.html;
-      contentDiv.style.opacity = 1;
+      contentDiv.insertAdjacentHTML("beforeend", item.html)
   
 
       initSwiper();
