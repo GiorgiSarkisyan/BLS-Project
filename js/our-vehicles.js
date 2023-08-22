@@ -21,8 +21,12 @@ const users = [
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
                         </div>
                 <div class="global-paragraphs">
                     <div class="page-title">
@@ -74,8 +78,12 @@ const users = [
         </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
 </div>
   <div class="global-paragraphs">
       <div class="global-transport-paragraph">
@@ -140,8 +148,12 @@ const users = [
       </div>
   </div>
   <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
 </div>
   <div class="global-paragraphs">
       <div class="page-title">
@@ -178,8 +190,12 @@ const users = [
         </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
    </div>
   <div class="global-paragraphs">
       <div class="global-transport-paragraph">
@@ -235,8 +251,12 @@ const users = [
         </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
 </div>
   <div class="global-paragraphs">
       <div class="global-transport-paragraph">
@@ -292,8 +312,12 @@ const users = [
         </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
 </div>
 <div class="global-paragraphs">
     <div class="page-title">
@@ -339,8 +363,12 @@ html: `<div class="page-title">
     </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                              <div class="swiper-button-prev-figure"></div>
+                            </div>
+                            <div class="swiper-button-next">
+                            <div class="swiper-button-next-figure"> </div>
+                            </div>
 </div>
 <div class="global-paragraphs">
 <div class="page-title">
@@ -391,9 +419,13 @@ html: `<div class="page-title">
 <img src="MultiplexImages/DSC_8540.jpg" alt="ambulance">
 </div>
     </div>
-<div class="swiper-pagination"></div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev">
+      <div class="swiper-button-prev-figure"></div>
+    </div>
+    <div class="swiper-button-next">
+    <div class="swiper-button-next-figure"> </div>
+    </div>
 </div>
 <div class="global-paragraphs">
 <div class="page-title">
@@ -514,16 +546,6 @@ listContentButton.addEventListener('click', () => {
     vehiclesList.classList.toggle('active');
   });
   
-  document.addEventListener('click', event => {
-    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
-    const isClickOnListContentButton = listContentButton.contains(event.target);
-    const isVehiclesListActive = vehiclesList.classList.contains('active');
-  
-    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
-      vehiclesList.classList.remove('active');
-    }
-  });
-  
 
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -548,12 +570,58 @@ else {
   changeContent(defaultUser);
   updateButtonStyles(buttons.find(button => button.textContent === "BLS Frontline"));
 }
-document.addEventListener('click', event => {
-    const isClickInsideVehiclesList = vehiclesList.contains(event.target);
-    const isClickOnListContentButton = listContentButton.contains(event.target);
-    const isVehiclesListActive = vehiclesList.classList.contains('active');
-  
-    if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
-      vehiclesList.classList.remove('active');
+
+
+if (window.innerWidth <= 1024) {
+    function handleClickOutside(event) {
+        const isClickInsideVehiclesList = vehiclesList.contains(event.target);
+        const isClickOnListContentButton = listContentButton.contains(event.target);
+        const isVehiclesListActive = vehiclesList.classList.contains('active');
+      
+        if (isVehiclesListActive && !isClickInsideVehiclesList && !isClickOnListContentButton) {
+          vehiclesList.classList.remove('active');
+        }
+      }
+    function handleResize() {
+        if (window.innerWidth >= 1024) {
+            document.removeEventListener('click', handleClickOutside);
+        } else {
+            document.addEventListener('click', handleClickOutside);
+        }
     }
-  });
+    
+    window.addEventListener("resize", handleResize);
+    handleResize()
+}
+const container = document.getElementById('wrapper');
+const containerRect = container.getBoundingClientRect();
+const listRect = vehiclesList.getBoundingClientRect();
+const maxTop = containerRect.height - 330;
+const middleTop = containerRect.height - 420;
+const lowTop = containerRect.height;
+
+
+if (window.innerWidth >= 1280) {
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const newTop = Math.min(maxTop, Math.max(0 + scrollPosition));
+      
+        vehiclesList.style.transform = `translateY(${newTop}px)`;
+      });
+}
+else if(window.innerWidth < 1280) {
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const newTop = Math.min(middleTop, Math.max(0 + scrollPosition));
+      
+        vehiclesList.style.transform = `translateY(${newTop}px)`;
+      });
+}
+else if(window.innerWidth < 700) {
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const newTop = Math.min(lowTop, Math.max(0 + scrollPosition));
+      
+        vehiclesList.style.transform = `translateY(${newTop}px)`;
+      });
+}

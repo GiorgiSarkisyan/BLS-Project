@@ -16,7 +16,34 @@ ul{
 .global-header-content-nav li:nth-child(2)::after{
     width: 100%;
 }
+.swiper-button-next, .swiper-button-prev{
+    background-color: black;
+    opacity: 50% ;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.swiper-button-prev-figure{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    clip-path: polygon(79% 1%, 53% 53%, 79% 100%, 41% 100%, 16% 53%, 45% 0);
 
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    content: none !important;
+}
+.swiper-button-next-figure{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    clip-path: polygon(21% 1%, 47% 53%, 21% 100%, 59% 100%, 84% 53%, 55% 0);
+}
 .burger-nav-links:nth-child(2){
     background-color: white;
     color: black;
@@ -368,7 +395,7 @@ ul{
     width: 200px;
     top: 70px;
     left: 0;
-    transition: 0.7s;
+    transition: 0.4s ease-out;
     border-radius: 0px 10px 10px 0px;
     z-index: 2;
     display: flex;
@@ -430,7 +457,7 @@ ul{
     background-color: #3498db;
     color: white;
     padding-left: 12px;
-  }
+}
 .our-vehicles-list-button.active::before{
     content: '';
     background-color: white;
@@ -438,11 +465,11 @@ ul{
     width: 5px;
 }
 .global-transport-list-content-button{
-    width: 60px;
-    height: 70px;
+    width: 15px;
+    height: 90px;
     position: absolute;
-    clip-path: polygon(20% 50%, 0 0, 0 100%);
-    left: 100%;
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    left: 99.7%;
     bottom: 50%;
     background-color: black;
     transform: translateY(50%);
@@ -783,6 +810,8 @@ ul{
     .upper-side-right-contact ul{
         justify-content: center;
     }
+}
+@media( max-width: 1300px) {
     .global-transport-list{
         left: -190px;
     }
