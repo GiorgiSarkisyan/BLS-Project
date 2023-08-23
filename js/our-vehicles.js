@@ -542,18 +542,13 @@ ptsActiveButton.addEventListener("click", () => {
 const listContentButton = document.getElementById('listContentToggleButton');
 const vehiclesList = document.getElementById('vehiclesList');
 
-listContentButton.addEventListener('click', () => {
-    vehiclesList.classList.toggle('active');
-  });
-  
-
-
 const urlParams = new URLSearchParams(window.location.search);
 const selectedTitle = urlParams.get('title');
 const ptsTitle = urlParams.get('title');
 
 const selectedUser = users.find(user => user.title === selectedTitle);
 const ptsUser = ptsItems.find(user => user.title === ptsTitle);
+
 
 
 if (selectedUser) {
@@ -625,3 +620,32 @@ else if(window.innerWidth < 700) {
         vehiclesList.style.transform = `translateY(${newTop}px)`;
       });
 }
+const buttonArrow = document.getElementById("listContentButtonArrow");
+if (window.innerWidth <= 1300) {
+    buttonArrow.classList.add("active")
+}
+function rotateButton() {
+    listContentButton.addEventListener('click', () => {
+        vehiclesList.classList.toggle('active');
+        rotateArrow();
+    });
+
+    window.addEventListener('resize', () => {
+        rotateArrow();
+    });
+    function rotateArrow() {
+        if (window.innerWidth > 1300 && vehiclesList.classList.contains('active')) {      
+            buttonArrow.style.transform = "rotate(180deg)";
+        } else if (window.innerWidth > 1300 && !vehiclesList.classList.contains('active')) {
+            buttonArrow.style.transform = "rotate(0deg)";
+        }
+        else if (window.innerWidth <= 1300 && !vehiclesList.classList.contains('active')) {  
+            buttonArrow.style.transform = "rotate(180deg)"
+        }
+        else if (window.innerWidth <= 1300 && vehiclesList.classList.contains('active')) {
+            buttonArrow.style.transform = "rotate(0deg)"
+        }
+    }
+    rotateArrow();
+}
+rotateButton();

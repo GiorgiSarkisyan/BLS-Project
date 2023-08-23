@@ -262,7 +262,7 @@ ul{
     width: 100%;
     top: 0;
     background: #00609c;
-    z-index:2;
+    z-index:5;
     transition: 0.5s;
 }
 .global-header-content{
@@ -366,7 +366,7 @@ ul{
     grid-template-columns: minmax(auto, 940px) auto;
 }
 .global-transport{
-    margin-top: 70px;
+    margin-top: 50px;
     position: relative;
 }
 .global-transport-content-left{
@@ -396,7 +396,7 @@ ul{
     left: 0;
     transition: 0.4s ease-out;
     border-radius: 0px 10px 10px 0px;
-    z-index: 2;
+    z-index: 4;
     display: flex;
 }
 .global-transport-list.active{
@@ -473,14 +473,15 @@ ul{
     transform: translateY(50%);
     display: flex;
     align-items: center;
-    z-index:3;
+    z-index:4;
     border-radius: 50%;
     justify-content: center;
+
 }
 .list-content-button-arrow{
     width: 20px;
     height: 20px;
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);;
     background-color: #3399ff;
 }
 .our-vehicles-list-button::before{
@@ -629,6 +630,10 @@ ul{
     display: grid;
     grid-template-columns: minmax(auto, 940px) auto;
 }
+.global-transport{
+    margin-top: 50px;
+    position: relative;
+}
 .global-transport-content-left{
     padding: 0 20px 0px 0px;
     max-width: 940px;
@@ -738,7 +743,6 @@ ul{
         justify-content: center;
         align-items: center;
         width: 70px;
-        height: 70px;
     }
     .burger-nav-links.active{
         opacity: 100%;
