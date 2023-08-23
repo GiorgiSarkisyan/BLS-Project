@@ -30,4 +30,3 @@ document.addEventListener("click", event => {
         document.body.classList.remove("no-scroll");
     }
 });
-
