@@ -42,6 +42,11 @@
     width: 100%;
     display: grid;
     grid-template-rows: minmax(60px, auto) minmax(550px, auto);
+    opacity: 0;
+    transition: 0.75s;
+}
+.visible{
+    opacity: 1;
 }
 .car-iframe-image-box iframe{
     width: 100%;

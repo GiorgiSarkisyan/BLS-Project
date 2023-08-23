@@ -2,9 +2,6 @@
     background-color: white;
     color: black;
 }
-.global-header-content-nav li:nth-child(4)::after{
-    width: 100%;
-}
 .wrapper{
     min-height: 65vh;
 }
