@@ -631,7 +631,7 @@ ul{
     grid-template-columns: minmax(auto, 940px) auto;
 }
 .global-transport{
-    margin-top: 50px;
+    margin-top: 70px;
     position: relative;
 }
 .global-transport-content-left{
