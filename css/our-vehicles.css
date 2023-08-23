@@ -365,10 +365,6 @@ ul{
     display: grid;
     grid-template-columns: minmax(auto, 940px) auto;
 }
-.global-transport{
-    margin-top: 50px;
-    position: relative;
-}
 .global-transport-content-left{
     padding: 0px 20px 0px 0px;
     max-width: 900px;
