@@ -33,7 +33,7 @@ const users = [
                         <h2>EMS Frontline Renault Master</h2>
                     </div>
                     <div class="global-transport-paragraph">
-                        <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a Blue Light Services Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
+                        <p><b class="global-bold-text">Patient comfort and a safe working environment –</b> built to the highest standards and using the latest technologies <b class="global-bold-text">BUT</b> always demanding improvement is what makes a BLS Georgia Emergency Ambulance popular. We design your vehicles bespoke to your needs, building beyond CEN (BSEN 1789:2014) certification.</p>
                     </div>
                     <div class="global-transport-paragraph">
                         <p>Designed to meet the rigorous challenges Paramedics face to provide life saving clinical care, the end result a safer place to work for our frontline hero’s.</p>
